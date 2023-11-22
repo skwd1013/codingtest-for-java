@@ -7,7 +7,7 @@ public class Main
 		int D=sc.nextInt();
 		int H=sc.nextInt();
 		int W=sc.nextInt();
-		double a=((double)D*(double)D/((double)H*(double)H+(double)W*(double)W));
+		double a=(D*D/(double)(H*H+W*W));
 	    double b= Math.sqrt(a);
 		double realW=b*W;
 		double realH=b*H;
