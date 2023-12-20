@@ -5,8 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int[] A = new int[N];
-        Integer[] B= new Integer[N];
-        
+        Integer[] B = new Integer[N];
 
         for (int i = 0; i < N; i++) {
             A[i] = sc.nextInt();
@@ -15,16 +14,15 @@ public class Main {
         for (int i = 0; i < N; i++) {
             B[i] = sc.nextInt();
         }
-        
+
         Arrays.sort(A);
-        Arrays.sort(B,Collections.reverseOrder()); 
+        Arrays.sort(B, Collections.reverseOrder());
 
         long S = 0;
         for (int i = 0; i < N; i++) {
-            S += (long) A[i] * B[i]; 
+            S += (long) A[i] * B[i];
         }
 
         System.out.println(S);
     }
-}
 }
